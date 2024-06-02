@@ -7,14 +7,24 @@ export class Shoutout {
   id: number;
 
   @Field()
+  createdAt: Date;
+
+  @Field()
   message: string;
 
   @Field()
-  createdAt: Date;
+  pictureurl: string;
 
   @Field(() => Int)
-  userId: number;
+  shoutoutuserId: number;
 
   @Field(() => User)
-  user: User;
+  shoutoutuser: User;
+
+  @Field(() => Int)
+  fromuserId: number;
+
+  @Field(() => User)
+  fromuser: User;
 }
+

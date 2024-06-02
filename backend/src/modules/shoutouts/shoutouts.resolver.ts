@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
+import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
 import { ShoutoutsService } from './shoutouts.service';
 import { Shoutout } from './shoutout.model';
 
@@ -12,7 +12,13 @@ export class ShoutoutsResolver {
   }
 
   @Mutation(() => Shoutout)
-  async createShoutout(@Args('message') message: string, @Args('userId') userId: number) {
-    return this.shoutoutsService.createShoutout(message, userId);
+  async createShoutout(
+    @Args('message') message: string,
+    @Args('pictureurl') pictureurl: string,
+    @Args('shoutoutuserId', { type: () => Int }) shoutoutuserId: number,
+    @Args('fromuserId', { type: () => Int }) fromuserId: number,
+  ) {
+    return this.shoutoutsService.createShoutout(message, pictureurl, shoutoutuserId, fromuserId);
   }
 }
+

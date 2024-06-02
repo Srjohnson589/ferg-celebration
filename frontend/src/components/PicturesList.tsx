@@ -1,0 +1,22 @@
+const pictureUrls = [
+    "https://media.istockphoto.com/id/108314907/photo/lets-party.jpg?s=612x612&w=0&k=20&c=dTiKyK2hOpNEi2ozwUU4oifMWO_JNMPD92MtTQ7MqH4=",
+    "https://img.freepik.com/free-photo/happy-funny-guy-surrounded-by-party-balloons-posing_273609-31599.jpg",
+    "https://media.istockphoto.com/id/166231642/photo/office-party.jpg?s=612x612&w=0&k=20&c=TjNKHWgzbcZD75H4BSbiL_REcRogMFlqHhz-T80J8QQ=",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ZrhoGBSdc7WxS3DUZq8VJIRQ94xM8hXIVqiyli2pNA&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3nQU6G-orMVlYcLozbZqafzC6NmhrxB7Fmg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlsgtyvpvLe7jAeGiopg9W26s8th-6QH3HgQ&s",
+    "https://media.istockphoto.com/id/525497677/photo/party-dog.jpg?s=612x612&w=0&k=20&c=siRNeZfkkqkhNvMHAYCxzXFFBF9Dljk4m1TmpRVwo5A=",
+    "https://media.istockphoto.com/id/1480335064/photo/cute-happy-dog-celebrating-at-a-birthday-party.jpg?s=612x612&w=0&k=20&c=pAXg_GpoQ4m6evTYXp8oExtqSOXP3pUdOiBBk8iHCts=",
+    "https://media.istockphoto.com/id/492186706/photo/happy-birthday-dog.jpg?s=612x612&w=0&k=20&c=kxplHwPtBuMPn1LQqNc_lSWgE1s1Xk34xXetnnQAZb0=",
+    "https://media.istockphoto.com/id/183140232/photo/turtle-wearing-party-hat-and-blower.jpg?s=612x612&w=0&k=20&c=MEGFnnNJInN4xR8miXOUY6oB_8e8F4CcnzOcU7kwzI8=",
+    "https://media.istockphoto.com/id/678738862/photo/colorful-party-woman.jpg?s=612x612&w=0&k=20&c=d-aDo_pfJRT9_9OP4kImgheea8LZk4nt5BAHBCK_oRs=",
+    "https://media.istockphoto.com/id/85406311/photo/businessman-dancing-on-desk-in-cubicle.jpg?s=612x612&w=0&k=20&c=I7tr23ryhAdQPiRJ2VMMRN1jpgMyed935VMV3KdIfQo=",
+    "https://media.istockphoto.com/id/534926145/photo/man-with-trophy.jpg?s=612x612&w=0&k=20&c=b86rRh19DHnTnZOU7DEuWuDn8Zkt0qr6zRGdWh2IPr8=",
+    "https://media.istockphoto.com/id/1175685070/photo/full-body-photo-of-overweight-carefree-delightful-ecstatic-active-energetic-listening-hip-hop.jpg?s=612x612&w=0&k=20&c=TdCjL00tUVxkxbMRfw4GyP8y-xnG48HrQ4J_uSuE5GA=",
+    "https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI=",
+    "https://media.istockphoto.com/id/1360062800/photo/carefree-african-woman-dancing-in-kitchen-at-home.jpg?s=612x612&w=0&k=20&c=Zh3C41p_gRlbV62-m-njVi1frfnW3GXHzcTpCfhacnM=",
+    "https://media.istockphoto.com/id/1167046125/photo/eccentric-senior-man-portrait.jpg?s=612x612&w=0&k=20&c=pBKOXKkWt6LC0EcHZyqOE0tJ5kH5lXWKH1i03j9Mms0=",
+    "https://media.istockphoto.com/id/1351477272/photo/crazy-senior-man-having-fun-doing-party-during-holidays-time-elderly-people-celebrating-life.jpg?s=612x612&w=0&k=20&c=ZbV08DTRMy3q6Zj0Dp6UPXbkRgJO1fiw67hnuAx8H3A=",
+    "https://media.istockphoto.com/id/453467837/photo/fingers-family.jpg?s=612x612&w=0&k=20&c=tTRYLFO_2-l2D_zFhtKfAiSOoezBA68CzyDBahzX6AE=",
+
+]

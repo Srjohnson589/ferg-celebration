@@ -14,17 +14,22 @@ datasource db {
   directUrl= env("DIRECT_URL")
 }
 
-model User {
-  id        Int      @id @default(autoincrement())
-  username  String   @unique
-  password  String
-  shoutouts Shoutout[]
+model Shoutout {
+  id             Int      @id @default(autoincrement())
+  createdAt      DateTime @default(now())
+  message        String
+  pictureurl     String
+  shoutoutuserId Int
+  fromuserId     Int
+  shoutoutuser   User     @relation("ShoutoutsReceived", fields: [shoutoutuserId], references: [id])
+  fromuser       User     @relation("ShoutoutsSent", fields: [fromuserId], references: [id])
 }
 
-model Shoutout {
-  id        Int      @id @default(autoincrement())
-  message   String
-  createdAt DateTime @default(now())
-  userId    Int
-  user      User     @relation(fields: [userId], references: [id])
+model User {
+  id              Int        @id @default(autoincrement())
+  firstname       String
+  lastname        String
+  shoutoutsSent   Shoutout[] @relation("ShoutoutsSent")
+  shoutoutsReceived Shoutout[] @relation("ShoutoutsReceived")
 }
+

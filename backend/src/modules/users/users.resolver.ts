@@ -17,7 +17,7 @@ export class UsersResolver {
   }
 
   @Mutation(() => User)
-  async createUser(@Args('username') username: string, @Args('password') password: string) {
-    return this.usersService.create(username, password);
+  async createUser(@Args('username') firstname: string, @Args('password') lastname: string) {
+    return this.usersService.create(firstname, lastname);
   }
 }

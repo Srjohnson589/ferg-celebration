@@ -1,6 +1,5 @@
 import { Field, Int, ObjectType } from '@nestjs/graphql';
-import { Shoutout } from '../shoutouts/shoutout.model'; // Import Shoutout model if needed
-
+import { Shoutout } from '../shoutouts/shoutout.model'; // Import Shoutout model
 
 @ObjectType()
 export class User {
@@ -8,11 +7,14 @@ export class User {
   id: number;
 
   @Field()
-  username: string;
+  firstname: string;
 
   @Field()
-  password: string;
+  lastname: string;
 
   @Field(() => [Shoutout], { nullable: true })
-  shoutouts?: Shoutout[];
+  shoutoutsSent?: Shoutout[];
+
+  @Field(() => [Shoutout], { nullable: true })
+  shoutoutsReceived?: Shoutout[];
 }

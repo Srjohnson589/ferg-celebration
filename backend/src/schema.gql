@@ -4,17 +4,21 @@
 
 type User {
   id: Int!
-  username: String!
-  password: String!
-  shoutouts: [Shoutout!]
+  firstname: String!
+  lastname: String!
+  shoutoutsSent: [Shoutout!]
+  shoutoutsReceived: [Shoutout!]
 }
 
 type Shoutout {
   id: Int!
-  message: String!
   createdAt: DateTime!
-  userId: Int!
-  user: User!
+  message: String!
+  pictureurl: String!
+  shoutoutuserId: Int!
+  shoutoutuser: User!
+  fromuserId: Int!
+  fromuser: User!
 }
 
 """
@@ -27,5 +31,5 @@ type Query {
 }
 
 type Mutation {
-  createShoutout(message: String!, userId: Float!): Shoutout!
+  createShoutout(message: String!, pictureurl: String!, shoutoutuserId: Int!, fromuserId: Int!): Shoutout!
 }
